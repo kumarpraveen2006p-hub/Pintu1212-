@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghar Baithe Book Writing Job | Women WFH Opportunity</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Rozha+One&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        female: {
+                            rose: '#FFF0F5',
+                            pinkLight: '#FFD1DC',
+                            pinkMedium: '#FF69B4',
+                            pinkDark: '#D81B60',
+                            purpleSoft: '#8E24AA',
+                            purpleDark: '#3A0CA3',
+                            telegram: '#0088cc',
+                            telegramDark: '#006699',
+                            gold: '#FFD700',
+                            goldLight: '#FFF8DC',
+                            cardBg: '#FFFFFF',
+                            textDark: '#2D152B',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Fredoka', 'sans-serif'],
+                        serif: ['Rozha One', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            background-color: #0F0817;
+            color: #2D152B;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            min-height: 100vh;
+        }
+
+        .pink-gradient-text {
+            background: linear-gradient(135deg, #FF1493 0%, #C71585 50%, #8A2BE2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #FFE066 0%, #FFB703 100%);
+        }
+
+        .pink-gradient-bg {
+            background: linear-gradient(135deg, #FF69B4 0%, #D81B60 100%);
+        }
+
+        .telegram-gradient-bg {
+            background: linear-gradient(135deg, #0088cc 0%, #005580 100%);
+        }
+
+        .purple-pink-bg {
+            background: linear-gradient(135deg, #7209B7 0%, #F72585 100%);
+        }
+
+        .soft-glow {
+            box-shadow: 0 10px 30px -5px rgba(216, 27, 96, 0.3);
+        }
+
+        .telegram-glow {
+            box-shadow: 0 10px 25px -5px rgba(0, 136, 204, 0.4);
+        }
+
+        /* Mobile Container Layout */
+        .mobile-container {
+            max-width: 440px;
+            margin: 0 auto;
+            background: #FFF0F5;
+            min-height: 100vh;
+            position: relative;
+            box-shadow: 0 0 60px rgba(247, 37, 133, 0.25);
+            border-left: 1px solid rgba(255, 182, 193, 0.3);
+            border-right: 1px solid rgba(255, 182, 193, 0.3);
+            overflow-x: hidden;
+            padding-bottom: 95px; /* Space for sticky bottom action bar */
+        }
+
+        /* 3D Book Animation */
+        .book-container {
+            perspective: 800px;
+        }
+        .book {
+            width: 165px;
+            height: 235px;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: rotateY(-16deg) rotateX(6deg);
+            transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .book-container:hover .book {
+            transform: rotateY(-2deg) rotateX(0deg) scale(1.04);
+        }
+        .book-cover {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 4px 10px 10px 4px;
+            box-shadow: -10px 10px 25px rgba(58, 12, 163, 0.35);
+        }
+        .book-spine {
+            position: absolute;
+            width: 22px;
+            height: 100%;
+            left: -11px;
+            transform: rotateY(-90deg);
+            border-radius: 3px 0 0 3px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0F0817;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FF69B4;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-female-pinkMedium selection:text-white">
+
+    <!-- Outer Background Decoration for Large Screens -->
+    <div class="fixed inset-0 pointer-events-none hidden lg:block overflow-hidden">
+        <div class="absolute top-10 left-12 text-white/10 text-9xl"><i class="fa-solid fa-laptop-house"></i></div>
+        <div class="absolute bottom-10 right-12 text-white/10 text-9xl"><i class="fa-solid fa-pen-nib"></i></div>
+        <div class="absolute top-1/2 left-10 -translate-y-1/2 text-center text-pink-200/60 max-w-xs">
+            <span class="bg-pink-500/20 text-pink-300 border border-pink-500/40 text-xs px-3 py-1 rounded-full uppercase font-bold tracking-widest">Women Work From Home</span>
+            <h1 class="text-3xl font-extrabold text-white mt-3 font-heading">Book & Content Writing Job ✨</h1>
+            <p class="text-xs text-pink-200/80 mt-2">Mobile view optimized on screen center.</p>
+        </div>
+        <div class="absolute top-1/2 right-10 -translate-y-1/2 text-center text-pink-200/60 max-w-xs">
+            <div class="bg-purple-950/60 border border-purple-500/30 p-5 rounded-2xl">
+                <p class="text-sm font-bold text-white mb-2">🌸 Exclusively For Women & Girls</p>
+                <p class="text-xs text-pink-200/80">Students • Housewives • Job Seekers • Freelancers</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN MOBILE APP CONTAINER -->
+    <div class="mobile-container">
+
+        <!-- Top Announcement Ribbon -->
+        <div class="bg-gradient-to-r from-pink-600 via-purple-600 to-pink-600 text-white text-[11px] py-2 px-3 text-center font-semibold flex items-center justify-center gap-1.5 shadow-sm sticky top-0 z-50">
+            <span class="animate-pulse">🌸</span>
+            <span>WFH Job + Masterclass | Strictly For Girls & Women</span>
+            <span class="bg-yellow-300 text-purple-950 font-extrabold text-[9px] px-2 py-0.5 rounded-full ml-1 uppercase">FEES ₹1,100</span>
+        </div>
+
+        <!-- Mobile Header Navigation -->
+        <header class="bg-white/95 backdrop-blur-md px-4 py-2.5 sticky top-[29px] z-40 border-b border-pink-100 flex items-center justify-between shadow-sm">
+            <div class="flex items-center gap-2">
+                <div class="w-9 h-9 rounded-full pink-gradient-bg flex items-center justify-center text-white font-black text-lg shadow-md">
+                    <i class="fa-solid fa-crown text-sm"></i>
+                </div>
+                <div>
+                    <span class="text-base font-extrabold text-female-purpleDark font-heading leading-none block">Superwoman<span class="text-female-pinkDark">Jobs</span></span>
+                    <span class="text-[9px] text-pink-500 font-bold uppercase tracking-wider">WFH Book Writing Opportunity</span>
+                </div>
+            </div>
+
+            <a href="https://t.me/your_telegram_channel" target="_blank" class="bg-female-telegram hover:bg-female-telegramDark text-white font-bold text-[11px] px-3 py-1.5 rounded-full shadow-md transition-all flex items-center gap-1">
+                <i class="fa-brands fa-telegram text-sm"></i>
+                <span>Telegram</span>
+            </a>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="pt-5 pb-8 px-4 bg-gradient-to-b from-pink-100/80 via-female-rose to-white relative overflow-hidden">
+            <div class="absolute top-4 right-3 text-pink-300 text-xl opacity-60"><i class="fa-solid fa-sparkles"></i></div>
+            <div class="absolute top-24 left-2 text-purple-300 text-base opacity-60"><i class="fa-solid fa-heart"></i></div>
+
+            <!-- Verified WFH Badge -->
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 border border-emerald-300 text-emerald-800 text-[11px] font-bold mb-3">
+                <i class="fa-solid fa-shield-check text-emerald-600 text-xs"></i>
+                <span>100% Verified Work From Home Opportunity</span>
+            </div>
+
+            <!-- Main High-Converting Headline -->
+            <h1 class="text-2xl sm:text-3xl font-black text-female-purpleDark font-heading leading-tight mb-3">
+                Ghar Baithe Book Writing Se <span class="pink-gradient-text">₹25,000 - ₹50,000/Month</span> Kamayein! 📚✨
+            </h1>
+
+            <p class="text-xs text-gray-700 leading-relaxed font-medium mb-4">
+                <b>Only For Girls & Housewives!</b> Bina kisi purane experience ke apne mobile se Short Books aur Stories likhna seekhein aur mahine ki fixed income/royalty shuru karein.
+            </p>
+
+            <!-- Telegram Primary Banner Callout -->
+            <a href="https://t.me/your_telegram_channel" target="_blank" class="telegram-gradient-bg text-white p-3.5 rounded-2xl shadow-md telegram-glow flex items-center justify-between mb-5 hover:opacity-95 transition-all">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-brands fa-telegram text-white"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold text-white font-heading">Join Official Telegram Group</h4>
+                        <p class="text-[10px] text-sky-100">Daily Job Updates, Proofs & Direct Chat Support</p>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right text-xs text-sky-200"></i>
+            </a>
+
+            <!-- 3D Book Mockup Visual -->
+            <div class="my-5 flex justify-center items-center">
+                <div class="book-container">
+                    <div class="book">
+                        <div class="book-spine purple-pink-bg"></div>
+                        <div class="book-cover bg-gradient-to-br from-pink-600 via-purple-700 to-indigo-900 p-4 border border-pink-200 flex flex-col justify-between text-white">
+                            <div>
+                                <span class="text-[8px] bg-yellow-300 text-black px-1.5 py-0.5 rounded font-extrabold uppercase tracking-wider">WFH EDITION</span>
+                                <h3 class="text-xs font-extrabold mt-2 font-heading leading-tight text-yellow-200">
+                                    WOMEN BOOK<br><span class="text-white">WRITING JOB GUIDE</span>
+                                </h3>
+                                <p class="text-[9px] text-pink-100 mt-1">Earn ₹25k-₹50k/Month From Home</p>
+                            </div>
+                            <div class="text-center my-2">
+                                <div class="w-9 h-9 mx-auto rounded-full bg-white/20 backdrop-blur border border-white/40 flex items-center justify-center text-yellow-300 text-base shadow-inner">
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                </div>
+                            </div>
+                            <div class="border-t border-white/20 pt-2">
+                                <p class="text-[8px] text-pink-200 uppercase font-semibold">100% Training Included</p>
+                                <p class="text-[10px] font-bold text-yellow-300">Registration Fee: ₹1,100</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dynamic Urgency Countdown Timer -->
+            <div class="bg-white/95 border border-pink-200 rounded-2xl p-3.5 shadow-md text-center my-5">
+                <p class="text-[10px] text-pink-600 font-bold uppercase tracking-wider mb-1.5 flex items-center justify-center gap-1">
+                    <i class="fa-solid fa-clock-three"></i> Discount Offer Closing Soon!
+                </p>
+                <div class="flex justify-center items-center gap-2 text-female-purpleDark font-extrabold text-lg" id="timer">
+                    <div class="bg-pink-100/80 px-2.5 py-1 rounded-lg border border-pink-200">
+                        <span id="hours">02</span>
+                        <span class="text-[8px] block font-sans text-gray-500 font-normal -mt-1">HRS</span>
+                    </div>
+                    <span>:</span>
+                    <div class="bg-pink-100/80 px-2.5 py-1 rounded-lg border border-pink-200">
+                        <span id="minutes">15</span>
+                        <span class="text-[8px] block font-sans text-gray-500 font-normal -mt-1">MINS</span>
+                    </div>
+                    <span>:</span>
+                    <div class="bg-pink-100/80 px-2.5 py-1 rounded-lg border border-pink-200">
+                        <span id="seconds">40</span>
+                        <span class="text-[8px] block font-sans text-gray-500 font-normal -mt-1">SECS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Primary CTAs -->
+            <div class="space-y-2.5">
+                <button onclick="openModal()" class="w-full pink-gradient-bg text-white font-extrabold text-base py-3.5 px-5 rounded-2xl shadow-lg soft-glow hover:opacity-95 active:scale-98 transition-all flex items-center justify-center gap-2">
+                    <span>Register Now @ ₹1,100 Only</span>
+                    <i class="fa-solid fa-arrow-right text-sm"></i>
+                </button>
+
+                <a href="https://t.me/your_telegram_channel" target="_blank" class="w-full bg-female-telegram hover:bg-female-telegramDark text-white font-bold text-xs py-3 px-5 rounded-2xl shadow-md telegram-glow transition-all flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-telegram text-base"></i>
+                    <span>Contact / Join Telegram Support Group</span>
+                </a>
+
+                <p class="text-[10px] text-center text-gray-500 flex items-center justify-center gap-1 font-medium pt-1">
+                    <i class="fa-solid fa-circle-check text-green-500"></i> Registration Fee: ₹1,100 (Original Price: <span class="line-through">₹2,999</span>)
+                </p>
+            </div>
+        </section>
+
+        <!-- Key Metrics Strip -->
+        <section class="bg-white py-3 px-4 border-y border-pink-100">
+            <div class="grid grid-cols-3 gap-2 text-center divide-x divide-pink-100">
+                <div>
+                    <h4 class="text-sm font-extrabold text-female-purpleDark font-heading">₹25K - ₹50K</h4>
+                    <p class="text-[9px] text-pink-600 font-semibold">Monthly Earning</p>
+                </div>
+                <div>
+                    <h4 class="text-sm font-extrabold text-female-purpleDark font-heading">2,800+</h4>
+                    <p class="text-[9px] text-pink-600 font-semibold">Women Working</p>
+                </div>
+                <div>
+                    <h4 class="text-sm font-extrabold text-female-purpleDark font-heading">2-3 Hrs</h4>
+                    <p class="text-[9px] text-pink-600 font-semibold">Daily Mobile Work</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why This WFH Opportunity for Women -->
+        <section class="py-7 px-4 bg-female-rose">
+            <div class="text-center mb-6">
+                <span class="text-[10px] font-bold text-pink-600 bg-pink-100 px-3 py-1 rounded-full uppercase tracking-wider">Job Key Highlights</span>
+                <h2 class="text-xl font-extrabold text-female-purpleDark font-heading mt-2">Is Work From Home Ke Fayde 💼🌸</h2>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+                <!-- Benefit 1 -->
+                <div class="bg-white p-3.5 rounded-2xl border border-pink-100 shadow-sm flex flex-col justify-between">
+                    <div class="w-9 h-9 rounded-xl bg-pink-100 text-pink-600 flex items-center justify-center text-base mb-2">
+                        🏠
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-bold text-female-purpleDark font-heading mb-1">Ghar Se Kaam</h3>
+                        <p class="text-[10px] text-gray-600 leading-snug">Kahi bahar jaane ki zaroorat nahi, apne phone se kaam karein.</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="bg-white p-3.5 rounded-2xl border border-pink-100 shadow-sm flex flex-col justify-between">
+                    <div class="w-9 h-9 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-base mb-2">
+                        ⏰
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-bold text-female-purpleDark font-heading mb-1">Flexible Timings</h3>
+                        <p class="text-[10px] text-gray-600 leading-snug">Din me jab bhi 2-3 ghante free milein, tab likhne ka kaam karein.</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="bg-white p-3.5 rounded-2xl border border-pink-100 shadow-sm flex flex-col justify-between">
+                    <div class="w-9 h-9 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-base mb-2">
+                        🎓
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-bold text-female-purpleDark font-heading mb-1">Complete Training</h3>
+                        <p class="text-[10px] text-gray-600 leading-snug">Aapko step-by-step training di jayegi AI tools aur writing ki.</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="bg-white p-3.5 rounded-2xl border border-pink-100 shadow-sm flex flex-col justify-between">
+                    <div class="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-base mb-2">
+                        💰
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-bold text-female-purpleDark font-heading mb-1">Weekly Guidance</h3>
+                        <p class="text-[10px] text-gray-600 leading-snug">Direct Telegram support & payouts guidance har hafte.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3-Step Simple Joining Process -->
+        <section class="py-7 px-4 bg-white">
+            <div class="text-center mb-6">
+                <span class="text-[10px] font-bold text-purple-600 bg-purple-100 px-3 py-1 rounded-full uppercase tracking-wider">Simple Process</span>
+                <h2 class="text-xl font-extrabold text-female-purpleDark font-heading mt-2">Kaam Shuru Kaise Karein? 🚀</h2>
+            </div>
+
+            <div class="space-y-3.5">
+                <!-- Step 1 -->
+                <div class="bg-female-rose border border-pink-200 p-4 rounded-2xl flex items-start gap-3.5 relative overflow-hidden">
+                    <span class="text-2xl font-black text-pink-300/40 absolute right-3 bottom-1 font-heading">STEP 01</span>
+                    <div class="w-9 h-9 rounded-full pink-gradient-bg text-white font-extrabold text-sm flex items-center justify-center shrink-0 shadow-sm">
+                        1
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-bold text-female-purpleDark font-heading">Register @ ₹1,100 Fee</h3>
+                        <p class="text-[10px] text-gray-600 mt-1 leading-relaxed">Form bharein aur ₹1,100 registration fee pay karke apni seat confirm karein.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-female-rose border border-pink-200 p-4 rounded-2xl flex items-start gap-3.5 relative overflow-hidden">
+                    <span class="text-2xl font-black text-pink-300/40 absolute right-3 bottom-1 font-heading">STEP 02</span>
+                    <div class="w-9 h-9 rounded-full bg-female-telegram text-white font-extrabold text-sm flex items-center justify-center shrink-0 shadow-sm">
+                        2
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-bold text-female-purpleDark font-heading">Join Official Telegram Channel</h3>
+                        <p class="text-[10px] text-gray-600 mt-1 leading-relaxed">Payment ke baad aapko VIP Telegram channel link aur direct team access milega.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-female-rose border border-pink-200 p-4 rounded-2xl flex items-start gap-3.5 relative overflow-hidden">
+                    <span class="text-2xl font-black text-pink-300/40 absolute right-3 bottom-1 font-heading">STEP 03</span>
+                    <div class="w-9 h-9 rounded-full bg-emerald-600 text-white font-extrabold text-sm flex items-center justify-center shrink-0 shadow-sm">
+                        3
+                    </div>
+                    <div>
+                        <h3 class="text-xs font-bold text-female-purpleDark font-heading">Get Training & Start Writing</h3>
+                        <p class="text-[10px] text-gray-600 mt-1 leading-relaxed">Training video dekhein, short stories/books likhna shuru karein aur kamayein!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Telegram Focus Callout Section -->
+        <section class="py-6 px-4 bg-gradient-to-r from-sky-900 to-indigo-900 text-white text-center rounded-3xl mx-3 my-2 shadow-lg">
+            <div class="w-12 h-12 rounded-full bg-sky-500/30 border border-sky-300/40 mx-auto flex items-center justify-center text-2xl text-sky-300 mb-2">
+                <i class="fa-brands fa-telegram"></i>
+            </div>
+            <h3 class="text-base font-extrabold text-white font-heading">Koi Doubt Hai? Telegram Par Connect Karein!</h3>
+            <p class="text-[10px] text-sky-200 mt-1 mb-4">Official Telegram channel join karke daily earnings proof aur details dekhein.</p>
+
+            <a href="https://t.me/your_telegram_channel" target="_blank" class="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-extrabold text-xs px-5 py-3 rounded-full shadow-md transition-all">
+                <i class="fa-brands fa-telegram text-sm"></i>
+                <span>Join Official Telegram Channel</span>
+            </a>
+        </section>
+
+        <!-- Testimonials From Women -->
+        <section class="py-7 px-4 bg-white">
+            <div class="text-center mb-6">
+                <span class="text-[10px] font-bold text-pink-600 bg-pink-100 px-3 py-1 rounded-full uppercase tracking-wider">Earnings & Success Stories</span>
+                <h2 class="text-xl font-extrabold text-female-purpleDark font-heading mt-2">Humari Registered Members ❤️</h2>
+            </div>
+
+            <div class="space-y-3">
+                <!-- Testimonial 1 -->
+                <div class="bg-female-rose p-3.5 rounded-2xl border border-pink-100">
+                    <div class="flex items-center gap-2 mb-2">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Priya Sharma" class="w-8 h-8 rounded-full object-cover border border-pink-300">
+                        <div>
+                            <h4 class="text-xs font-bold text-female-purpleDark">Priya Sharma (College Student)</h4>
+                            <p class="text-[9px] text-emerald-600 font-bold">Earned ₹28,500 Last Month</p>
+                        </div>
+                    </div>
+                    <p class="text-[10px] text-gray-700 leading-relaxed italic">
+                        "Maine ₹1,100 registration fee di aur Telegram join kiya. Pehle haafte training mili, ab mai ghar baithe har month easily pocket money aur fees nikal leti hu."
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-female-rose p-3.5 rounded-2xl border border-pink-100">
+                    <div class="flex items-center gap-2 mb-2">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80" alt="Sunita Devi" class="w-8 h-8 rounded-full object-cover border border-pink-300">
+                        <div>
+                            <h4 class="text-xs font-bold text-female-purpleDark">Sunita Devi (Homemaker)</h4>
+                            <p class="text-[9px] text-emerald-600 font-bold">Earned ₹34,000 Last Month</p>
+                        </div>
+                    </div>
+                    <p class="text-[10px] text-gray-700 leading-relaxed italic">
+                        "Housewife hone ki wajah se bahar job karna mushkil tha. Is program ne mujhe mobile se short books aur content likhna sikhaya. Very helpful team!"
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Official Pricing Card -->
+        <section id="pricing" class="py-7 px-4 bg-gradient-to-b from-pink-100 via-female-rose to-white">
+            <div class="bg-white border-2 border-pink-400 rounded-3xl p-5 shadow-xl relative text-center">
+                
+                <span class="absolute top-0 right-0 bg-pink-500 text-white font-extrabold text-[9px] px-3 py-1 rounded-bl-xl uppercase">LIMITED SEATS</span>
+
+                <h3 class="text-lg font-extrabold text-female-purpleDark font-heading mt-2">Registration & Training Pass 🌸</h3>
+                <p class="text-[10px] text-gray-500 mt-0.5">Strictly For Women & Girls WFH Opportunity</p>
+
+                <!-- Fee Display -->
+                <div class="my-4">
+                    <div class="flex items-center justify-center gap-2">
+                        <span class="text-gray-400 line-through text-base font-bold">₹2,999</span>
+                        <span class="text-3xl font-black text-female-pinkDark font-heading">₹1,100</span>
+                    </div>
+                    <span class="text-[9px] bg-emerald-100 text-emerald-700 font-bold px-2.5 py-0.5 rounded-full inline-block mt-1">One-Time Registration Fee</span>
+                </div>
+
+                <div class="space-y-2 text-left my-4 text-[11px] text-gray-700 border-y border-pink-100 py-3">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-pink-500 text-xs"></i>
+                        <span>Complete Book & Content Writing Training</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-pink-500 text-xs"></i>
+                        <span>VIP Telegram Community & Support Access</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-pink-500 text-xs"></i>
+                        <span>Ready-made AI Prompts & Writing Templates</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-pink-500 text-xs"></i>
+                        <span>100% WFH Earnings Guidance</span>
+                    </div>
+                </div>
+
+                <button onclick="openModal()" class="w-full pink-gradient-bg text-white font-extrabold text-base py-3.5 rounded-xl shadow-md soft-glow hover:opacity-95 active:scale-98 transition-all mb-2.5">
+                    Pay ₹1,100 & Register Now
+                </button>
+
+                <a href="https://t.me/your_telegram_channel" target="_blank" class="w-full bg-female-telegram text-white font-bold text-xs py-2.5 rounded-xl block hover:opacity-90 transition-all">
+                    <i class="fa-brands fa-telegram mr-1"></i> Contact Admin On Telegram
+                </a>
+
+                <p class="text-[9px] text-gray-400 mt-3">🔒 Secure Payment via GPay, PhonePe, Paytm, UPI & Cards</p>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion -->
+        <section class="py-7 px-4 bg-white border-t border-pink-100">
+            <div class="text-center mb-5">
+                <span class="text-[10px] font-bold text-pink-600 bg-pink-100 px-3 py-1 rounded-full uppercase tracking-wider">Sawal Jawab</span>
+                <h2 class="text-lg font-extrabold text-female-purpleDark font-heading mt-1">Frequently Asked Questions 🤔</h2>
+            </div>
+
+            <div class="space-y-2.5">
+                <!-- FAQ 1 -->
+                <div class="border border-pink-100 rounded-xl bg-female-rose/50 overflow-hidden">
+                    <button onclick="toggleFaq(1)" class="w-full p-3 text-left font-bold text-xs text-female-purpleDark flex justify-between items-center">
+                        <span>Registration fee ₹1,100 kyun li ja rahi hai?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-pink-500 text-xs transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-ans-1" class="hidden p-3 pt-0 text-[10px] text-gray-600 border-t border-pink-100">
+                        Registration fee ₹1,100 aapke complete training materials, Telegram VIP access, writing templates aur personal guidance ke liye hai. Isse sirf serious applicants hi join karte hain.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="border border-pink-100 rounded-xl bg-female-rose/50 overflow-hidden">
+                    <button onclick="toggleFaq(2)" class="w-full p-3 text-left font-bold text-xs text-female-purpleDark flex justify-between items-center">
+                        <span>Payment karne ke baad kya hoga?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-pink-500 text-xs transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-ans-2" class="hidden p-3 pt-0 text-[10px] text-gray-600 border-t border-pink-100">
+                        Payment complete hote hi aapko humare VIP Telegram Group aur Member Portal ka instant link screen aur WhatsApp/Telegram par mil jayega.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="border border-pink-100 rounded-xl bg-female-rose/50 overflow-hidden">
+                    <button onclick="toggleFaq(3)" class="w-full p-3 text-left font-bold text-xs text-female-purpleDark flex justify-between items-center">
+                        <span>Kya mai mobile se hi likhne ka kaam kar sakti hu?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-pink-500 text-xs transition-transform duration-300"></i>
+                    </button>
+                    <div id="faq-ans-3" class="hidden p-3 pt-0 text-[10px] text-gray-600 border-t border-pink-100">
+                        Haan! 95% members mobile phone se hi kaam karte hain. Laptop ki koi compulsary zaroorat nahi hai.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-female-purpleDark text-pink-200 py-6 px-4 text-center text-[10px]">
+            <p class="font-bold text-white text-xs mb-1">Superwoman WFH Book Writing Program 🌸</p>
+            <p class="text-pink-300/80 mb-3">Empowering women & girls with real work from home opportunities.</p>
+            <div class="flex justify-center gap-3 text-sm mb-3">
+                <a href="https://t.me/your_telegram_channel" target="_blank" class="text-sky-300 hover:text-white"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#" class="text-pink-300 hover:text-white"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p>© 2026 SuperwomanJobs. All rights reserved.</p>
+        </footer>
+
+        <!-- Sticky Bottom Dual Action Navigation Bar -->
+        <div class="fixed bottom-0 left-0 right-0 z-50 p-2.5 bg-white/95 backdrop-blur-md border-t border-pink-200 shadow-2xl max-w-[440px] mx-auto flex items-center justify-between gap-2">
+            <a href="https://t.me/your_telegram_channel" target="_blank" class="w-1/2 bg-female-telegram text-white font-extrabold text-[11px] py-3 px-2 rounded-xl shadow-md text-center flex items-center justify-center gap-1.5 active:scale-95 transition-all">
+                <i class="fa-brands fa-telegram text-sm"></i>
+                <span>Telegram Support</span>
+            </a>
+
+            <button onclick="openModal()" class="w-1/2 pink-gradient-bg text-white font-extrabold text-[11px] py-3 px-2 rounded-xl shadow-lg soft-glow text-center flex items-center justify-center gap-1 active:scale-95 transition-all">
+                <span>Register @ ₹1,100</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </button>
+        </div>
+
+    </div>
+
+    <!-- Registration & Payment Modal -->
+    <div id="enrollModal" class="fixed inset-0 bg-black/75 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-sm rounded-3xl p-5 border-2 border-pink-300 shadow-2xl relative">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-pink-600 text-lg">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="text-center mb-3">
+                <span class="text-2xl">🌸</span>
+                <h3 class="text-base font-extrabold text-female-purpleDark font-heading">WFH Registration Form</h3>
+                <p class="text-[11px] text-pink-600 font-bold">One-Time Fee: ₹1,100 Only</p>
+            </div>
+
+            <form onsubmit="handleEnroll(event)" class="space-y-3">
+                <div>
+                    <label class="block text-[10px] font-bold text-gray-700 mb-1">Full Name (Aapka Naam)</label>
+                    <input type="text" required placeholder="e.g. Ananya Sharma" class="w-full px-3 py-2 border border-pink-200 rounded-xl text-xs focus:outline-none focus:border-pink-500 bg-pink-50/50">
+                </div>
+
+                <div>
+                    <label class="block text-[10px] font-bold text-gray-700 mb-1">WhatsApp / Phone Number</label>
+                    <input type="tel" required placeholder="10-digit number" class="w-full px-3 py-2 border border-pink-200 rounded-xl text-xs focus:outline-none focus:border-pink-500 bg-pink-50/50">
+                </div>
+
+                <div>
+                    <label class="block text-[10px] font-bold text-gray-700 mb-1">Telegram Username (Optional)</label>
+                    <input type="text" placeholder="@username" class="w-full px-3 py-2 border border-pink-200 rounded-xl text-xs focus:outline-none focus:border-pink-500 bg-pink-50/50">
+                </div>
+
+                <!-- UPI Payment Option Preview -->
+                <div class="bg-pink-50 p-2.5 rounded-xl border border-pink-200 text-center">
+                    <p class="text-[10px] font-bold text-gray-700 mb-1">Select Payment Method</p>
+                    <div class="flex justify-center gap-2 text-xs font-bold text-gray-600">
+                        <span class="bg-white px-2 py-1 rounded border border-pink-200">GPay</span>
+                        <span class="bg-white px-2 py-1 rounded border border-pink-200">PhonePe</span>
+                        <span class="bg-white px-2 py-1 rounded border border-pink-200">Paytm</span>
+                        <span class="bg-white px-2 py-1 rounded border border-pink-200">UPI</span>
+                    </div>
+                </div>
+
+                <div class="pt-1">
+                    <button type="submit" class="w-full pink-gradient-bg text-white font-extrabold text-xs py-3 rounded-xl shadow-md hover:opacity-95 active:scale-98">
+                        Pay ₹1,100 & Join Program 👉
+                    </button>
+                </div>
+            </form>
+
+            <p class="text-[9px] text-center text-gray-400 mt-2">After successful payment, you will be redirected to Telegram Channel.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript Actions -->
+    <script>
+        function toggleFaq(id) {
+            const ans = document.getElementById(`faq-ans-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+
+            if (ans.classList.contains('hidden')) {
+                ans.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                ans.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        function openModal() {
+            document.getElementById('enrollModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('enrollModal').classList.add('hidden');
+        }
+
+        function handleEnroll(e) {
+            e.preventDefault();
+            alert("🌸 Badhai Ho! Registration complete. Aapko Telegram channel link par redirect kiya ja raha hai!");
+            window.location.href = "https://t.me/your_telegram_channel";
+        }
+
+        function startTimer(duration) {
+            let timer = duration, hours, minutes, seconds;
+            setInterval(function () {
+                hours = parseInt(timer / 3600, 10);
+                minutes = parseInt((timer % 3600) / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                document.getElementById('hours').textContent = hours;
+                document.getElementById('minutes').textContent = minutes;
+                document.getElementById('seconds').textContent = seconds;
+
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            startTimer((2 * 3600) + (15 * 60) + 40);
+        };
+    </script>
+</body>
+</html>
